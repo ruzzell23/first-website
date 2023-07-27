@@ -1,0 +1,224 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    text-decoration: none;
+    list-style: none;
+}
+body{
+    font-family: Arial bold, sans-serif bold;
+    background-color: black;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+/* home page css */
+.home{
+    background: url(https://cdn.tatlerasia.com/asiatatler/i/ph/2021/06/11142329-cover-1_cover_1920x959.jpg) no-repeat;
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+    background-position: center;
+}
+.content{
+    text-align: center;
+    justify-content: center;
+}
+.content h1{
+    text-align: center;
+    justify-content: center;
+    font-size: 100px;
+    color: white;
+    margin-top: 170px;
+    margin-bottom: 20px;
+    font-family: serif;
+}
+.content a{
+    border: 1px solid white;
+    color: white;
+    border-radius: 50px;
+    padding: 14px 70px; 
+    margin-top: 20px;
+    font-size: 24px;
+    text-decoration: none;
+    font-family: serif;
+}
+/* service page css */
+.service{
+    background: url(https://cdn.tatlerasia.com/asiatatler/i/ph/2021/06/11142346-sigbin_cover_1920x958.jpg);
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+    background-position: center;
+    position: relative;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+.pick{
+    margin-top: 10px;
+    text-align: center;
+    font-family: serif;
+    color: white;
+    justify-content: center;
+    display: grid;
+    width: 100%;
+}
+.container{
+    display: flex;
+    z-index: -1;
+    margin: auto;
+    justify-content: center;
+}
+.card{
+    height: 300px;
+    margin: 40px;
+    box-shadow: 5px 5px 20px black;
+    overflow: hidden;
+    border-radius: 10px;
+    width: 200px;
+    justify-content: center;
+    align-items: center;
+    max-width: fit-content;
+    display: flex;
+}
+img {
+    height: 300px;
+    border-radius: 10px;
+    width: 240px;
+    justify-content: center;
+    align-items: center;
+}
+.card:hover img{
+    transform: scale(1.1);
+    transition: .5s;
+    border-radius: 10px;
+}
+/* navbar css */
+.sticky{
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0; 
+}
+nav{
+    background-color: black;
+    height: 80px;
+    width: 100%;
+    /* border: solid 1px white; */
+}
+label.logo{
+    color: white;
+    font-size: 35px;
+    line-height: 80px;
+    padding: 0% 100px;
+    font-weight: bold;
+    font-family: papyrus;   
+}
+nav  ul{
+    float: right;
+}   
+nav ul li{
+    display: inline-block;
+    line-height: 80px;
+    margin: 0% 20px;
+}
+nav ul li a{
+    color: white;
+    font-size: 15px;
+    text-transform: uppercase;
+    padding: 7px 13px;
+    border-radius: 3px;
+    font-weight: bold;
+}
+a:hover{
+    background: rgba(151, 148, 148, 0.432);
+    transition: .5s;
+    scale: 1.1;
+    color: red;
+}
+a.active{
+    background: rgba(151, 148, 148, 0.432);
+}
+.checkbtn{
+    font-size: 30px;
+    color: white;
+    float: right;
+    line-height: 80px;
+    display: none;
+    margin: right 10px;
+}
+#check{
+    display: none;
+}
+.logo:hover{
+    color: red;
+    transition: .5s;
+}
+.btn-body {
+    text-align: center;
+    font-family: serif;
+    font-size: 25px;    
+}
+.btn-body a{
+    color: white;
+}
+
+/* navbar media queries */
+@media (max-width: 1100px){
+    .checkbtn{
+        display: block;
+        margin-right: 10px;
+        z-index: 1;
+    }
+    nav ul li a{
+        display: none;
+    }
+}
+@media (max-width: 665px){
+    label.logo{
+        font-size: 25px;
+        margin: auto;
+    }
+}
+/* services media queries */
+@media (max-width: 1215px){    
+    .container{
+        display: grid;
+        width: 50%;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        margin: auto;
+        gap: 40px;
+        max-width: fit-content;
+    }
+    .card{
+        height: 300px;
+        margin: 40px;
+        box-shadow: 5px 5px 20px black;
+        overflow: hidden;
+        border-radius: 10px;
+        max-width: fit-content;
+        justify-content: center;
+        align-items: center;
+        display: grid;
+        margin: auto;
+    }
+    img {
+        height: 300px;
+        border-radius: 10px;
+        width: 210px;
+        justify-content: center;
+        align-items: center;
+        
+    }
+}
+@media (max-width: 665px){
+    .container{
+        display: grid;
+        width: 50%;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        margin: auto;
+        gap: 20px;
+        max-width: fit-content;
+ 
+    }
+}
