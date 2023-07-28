@@ -178,6 +178,13 @@ a.active{
         margin: auto;
     }
 }
+
+/*home page media queries*/
+@media (max-width: 544px){
+    .content h1{
+        font-size: 60px;
+    }
+}
 /* services media queries */
 @media (max-width: 1215px){    
     .container{
